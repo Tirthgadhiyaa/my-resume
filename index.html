@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tirth Gadhiya | Data Scientist & AI Enthusiast</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <style>
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+
+        .avatar-container {
+            width: 180px;
+            height: 180px;
+            margin: 0 auto 2rem;
+            position: relative;
+            border-radius: 50%;
+            padding: 5px;
+            background: var(--grad-primary);
+            box-shadow: 0 0 30px rgba(112, 0, 255, 0.4);
+        }
+
+        .avatar {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--bg-color);
+        }
+
+        .hero-tags {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .tag {
+            background: var(--card-bg);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid var(--glass-border);
+        }
+    </style>
+</head>
+<body>
+    <div class="x-bg-glow"></div>
+    <canvas id="particle-canvas"></canvas>
+
+    <nav>
+        <div class="container nav-content">
+            <a href="index.html" style="font-weight: 800; color: white; text-decoration: none; font-size: 1.5rem; letter-spacing: 2px;">TIRTH.AI</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="avatar-container reveal tilt-card">
+                    <img src="assets/images/avatar.jpg" alt="Tirth Gadhiya" class="avatar tilt-content">
+                </div>
+                <h1 class="reveal" style="font-size: 5rem; letter-spacing: -2px;">TIRTH D. GADHIYA</h1>
+                <div class="hero-tags reveal">
+                    <span class="tag">Data Scientist</span>
+                    <span class="tag">AI & ML Engineer</span>
+                    <span class="tag">Python Specialist</span>
+                </div>
+                <p class="reveal" style="margin: 0 auto 3rem; font-size: 1.2rem; color: #fff; opacity: 0.8;">
+                    Crafting the future of intelligence through data-driven innovation and deep learning.
+                </p>
+                <div class="reveal" style="display: flex; gap: 1.5rem; justify-content: center;">
+                    <a href="projects.html" class="btn btn-primary">View Projects</a>
+                    <a href="contact.html" class="btn" style="border: 1px solid var(--secondary-color); color: var(--secondary-color);">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bento Grid Preview Section -->
+        <section style="padding: 50px 0;">
+            <div class="container">
+                <style>
+                    .bento-grid {
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr);
+                        grid-template-rows: repeat(2, 200px);
+                        gap: 1.5rem;
+                    }
+                    .bento-item {
+                        background: var(--card-bg);
+                        border: 1px solid var(--glass-border);
+                        border-radius: 24px;
+                        padding: 2rem;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        transition: var(--transition-base);
+                    }
+                    .bento-item:hover {
+                        background: rgba(255, 255, 255, 0.06);
+                        border-color: var(--secondary-color);
+                    }
+                    .bento-1 { grid-column: span 2; grid-row: span 2; background: linear-gradient(45deg, rgba(112, 0, 255, 0.1), transparent); }
+                    .bento-2 { grid-column: span 2; }
+                    .bento-3 { grid-column: span 1; }
+                    .bento-4 { grid-column: span 1; }
+                </style>
+                <div class="bento-grid">
+                    <div class="bento-item bento-1 reveal tilt-card">
+                        <div class="tilt-content">
+                            <h2 style="font-size: 1.8rem; margin: 0;">MCA IN AI</h2>
+                            <p style="font-size: 0.9rem;">Specializing in Deep Learning & Neural Networks at JAIN University.</p>
+                        </div>
+                    </div>
+                    <div class="bento-item bento-2 reveal tilt-card">
+                        <div class="tilt-content">
+                            <h3 style="color: white; margin: 0;">PYTHON EXPERT</h3>
+                            <p style="font-size: 0.8rem;">Building robust ML pipelines and interactive apps.</p>
+                        </div>
+                    </div>
+                    <div class="bento-item bento-3 reveal tilt-card">
+                        <div class="tilt-content">
+                            <h3 style="color: white; margin: 0;">8.40</h3>
+                            <p style="font-size: 0.8rem;">BCA CGPA</p>
+                        </div>
+                    </div>
+                    <div class="bento-item bento-4 reveal tilt-card">
+                        <div class="tilt-content">
+                            <h3 style="color: white; margin: 0;">3+</h3>
+                            <p style="font-size: 0.8rem;">Live Projects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

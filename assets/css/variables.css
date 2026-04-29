@@ -1,0 +1,64 @@
+:root {
+    /* Color Palette - Deep Premium Dark */
+    --bg-color: #030014;
+    --card-bg: rgba(255, 255, 255, 0.03);
+    --primary-color: #7000ff;
+    --secondary-color: #00d2ff;
+    --accent-color: #ff00c8;
+    --text-main: #ffffff;
+    --text-muted: #8a8a8a;
+    --glass-border: rgba(255, 255, 255, 0.08);
+    
+    /* Gradients Upgrade */
+    --grad-primary: linear-gradient(135deg, #7000ff, #00d2ff);
+    --grad-surface: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+    --grad-text: linear-gradient(to right, #ffffff, #00d2ff, #7000ff);
+    --mesh-grad: radial-gradient(at 10% 10%, rgba(112, 0, 255, 0.15), transparent),
+                 radial-gradient(at 90% 90%, rgba(0, 210, 255, 0.1), transparent);
+
+    /* Shadows & Blurs */
+    --shadow-sm: 0 4px 10px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 8px 32px rgba(0, 0, 0, 0.5);
+    --glass-blur: blur(12px);
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-base: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+    background-color: var(--bg-color);
+    background-image: var(--mesh-grad);
+    color: var(--text-main);
+    overflow-x: hidden;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--grad-primary);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
+
+.x-bg-glow {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle at center, rgba(112, 0, 255, 0.1) 0%, transparent 70%);
+    z-index: -2;
+    pointer-events: none;
+    filter: blur(50px);
+}

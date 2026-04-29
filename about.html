@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Tirth Gadhiya</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <style>
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .info-card {
+            background: var(--card-bg);
+            border: 1px solid var(--glass-border);
+            padding: 2.5rem;
+            border-radius: 20px;
+            backdrop-filter: var(--glass-blur);
+        }
+
+        .edu-item {
+            margin-bottom: 2rem;
+            padding-left: 1.5rem;
+            border-left: 2px solid var(--primary-color);
+        }
+
+        .edu-year {
+            font-size: 0.9rem;
+            color: var(--secondary-color);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="x-bg-glow"></div>
+    <canvas id="particle-canvas"></canvas>
+
+    <nav>
+        <div class="container nav-content">
+            <a href="index.html" style="font-weight: 800; color: white; text-decoration: none; font-size: 1.5rem; letter-spacing: 2px;">TIRTH.AI</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section>
+            <h1 class="reveal">About Me</h1>
+            <div class="about-grid">
+                <div class="reveal">
+                    <p style="margin-bottom: 2rem; max-width: 100%;">
+                        I am dedicated and highly motivated <strong>MCA student specializing in Artificial Intelligence</strong> at JAIN University, Bangalore. My journey in technology started with a curious mind and a passion for data, which led me to complete my <strong>Bachelor of Computer Application (BCA)</strong> with a stellar <strong>8.40 CGPA</strong>.
+                    </p>
+                    <p>
+                        I focus on building intelligent systems that can learn and adapt. My expertise lies in Python, Machine Learning, and building interactive data applications. I believe in the power of AI to transform industries and improve lives through data-driven insights.
+                    </p>
+                </div>
+                <div class="info-card reveal tilt-card">
+                    <div class="tilt-content">
+                        <h3 style="margin-bottom: 1.5rem; color: white;">Education</h3>
+                        <div class="edu-item">
+                            <div class="edu-year">2024 - Present</div>
+                            <div style="font-weight: 600;">MCA in Artificial Intelligence</div>
+                            <div style="font-size: 0.9rem; color: var(--text-muted);">JAIN University, Bangalore</div>
+                        </div>
+                        <div class="edu-item">
+                            <div class="edu-year">2021 - 2024</div>
+                            <div style="font-weight: 600;">Bachelor of Computer Application</div>
+                            <div style="font-size: 0.9rem; color: var(--text-muted);">Mahavir University, Surat | CGPA: 8.40</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

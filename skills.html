@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Tirth Gadhiya</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <style>
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .skill-card {
+            background: var(--card-bg);
+            border: 1px solid var(--glass-border);
+            padding: 2rem;
+            border-radius: 20px;
+            transition: var(--transition-base);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--secondary-color);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .skill-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--grad-primary);
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: white;
+        }
+
+        .skill-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .skill-list li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.2rem;
+            font-size: 0.95rem;
+        }
+
+        .skill-list li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--secondary-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="x-bg-glow"></div>
+    <canvas id="particle-canvas"></canvas>
+
+    <nav>
+        <div class="container nav-content">
+            <a href="index.html" style="font-weight: 800; color: white; text-decoration: none; font-size: 1.5rem; letter-spacing: 2px;">TIRTH.AI</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html" class="active">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section>
+            <h1 class="reveal">Technical Skills</h1>
+            <div class="skills-container">
+                <!-- Programming -->
+                <div class="skill-card reveal tilt-card">
+                    <div class="tilt-content">
+                        <div class="skill-icon">PY</div>
+                        <h3 style="color: white;">Programming</h3>
+                        <ul class="skill-list">
+                            <li>Python (Expert)</li>
+                            <li>SQL</li>
+                            <li>Flutter / Dart</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- AI & ML -->
+                <div class="skill-card reveal tilt-card">
+                    <div class="tilt-content">
+                        <div class="skill-icon">AI</div>
+                        <h3 style="color: white;">AI & Machine Learning</h3>
+                        <ul class="skill-list">
+                            <li>TensorFlow / Keras</li>
+                            <li>Scikit-learn</li>
+                            <li>Model Training & Evaluation</li>
+                            <li>Data Preprocessing</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Analysis & Tools -->
+                <div class="skill-card reveal tilt-card">
+                    <div class="tilt-content">
+                        <div class="skill-icon">DA</div>
+                        <h3 style="color: white;">Data & Analysis</h3>
+                        <ul class="skill-list">
+                            <li>Pandas / NumPy</li>
+                            <li>Streamlit Dashboards</li>
+                            <li>Matplotlib / Seaborn</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Other -->
+                <div class="skill-card reveal tilt-card">
+                    <div class="tilt-content">
+                        <div class="skill-icon">DB</div>
+                        <h3 style="color: white;">Others</h3>
+                        <ul class="skill-list">
+                            <li>MySQL / Database Design</li>
+                            <li>Git & GitHub</li>
+                            <li>Responsive Web Design</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="assets/js/particles.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
