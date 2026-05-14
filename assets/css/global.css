@@ -140,3 +140,27 @@ nav {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
+/* Animations */
+.reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.page-exit {
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: 0.5s;
+}
+
+.certificate-card:hover {
+    border-color: var(--secondary-color) !important;
+    transform: scale(1.02);
+    box-shadow: 0 10px 40px rgba(0, 210, 255, 0.2);
+}
+
